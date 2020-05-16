@@ -35,11 +35,11 @@ export class LoginComponent implements OnInit {
 
   login(loginData){
 
-/*    this.app.setLoggedIn();
+    this.app.setLoggedIn();
     localStorage.setItem('login',JSON.stringify(loginData));
     this.router.navigate(['/landing']);          
-*/
-    this.http.signIn(loginData).subscribe(
+
+/*    this.http.signIn(loginData).subscribe(
       (response)=>{
         console.log(response.json());
         localStorage.setItem("login",JSON.stringify(loginData));
@@ -48,7 +48,7 @@ export class LoginComponent implements OnInit {
         },(error)=>{
         console.log(error);
       }
-    );
+    );*/
   }
 
   signUpFunction(signUpData){
