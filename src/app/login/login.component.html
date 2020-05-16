@@ -1,0 +1,49 @@
+<body>
+  <img class="rapptrimage" src="../../assets/gpc_logo@2x.png" />  
+  <div class="container-fluid">
+      <div class="login-wrap">
+          <div class="login-html">
+            <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label style="color: white;font-weight: bolder;" for="tab-1" class="tab">Sign Up</label>
+            <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" style="color: white ; font-weight: bolder;" class="tab">Login</label>
+            <div class="login-form">
+              <div class="sign-up-htm">
+
+                <div class="group" style="margin-top: 30px;">
+                  <input class="input input-with-icon-inside1" type="text" style="color: white; font-weight: bolder;" [(ngModel)]="loginData.email" [ngModelOptions]="{standalone: true}"  placeholder="Enter UserName"  style="color: white"/>
+                </div>
+
+                <div class="group" style="margin-top: 12px;">
+                  <input class="input input-with-icon-inside2" type="password" style="color: white; font-weight: bolder;" [(ngModel)]="loginData.password" [ngModelOptions]="{standalone: true}" placeholder="Enter UserName"  style="color: white"/>
+                </div>
+
+                <div class="group" style="margin-top: 32px;">
+                  <input type="submit" class="button" style="color: black;" value="LOGIN" (click)="login(loginData)">
+                </div>
+                <div class="hr"></div>
+                <div class="foot-lnk">
+                  <a href="#forgot" style="color: white">Forgot Password?</a>
+                </div>
+              </div>
+              <div class="sign-in-htm">
+
+                <div class="group" style="margin-top: 30px;">
+                  <input class="input input-with-icon-inside" type="text" style="color: white;font-weight: bolder;" placeholder="Enter UserName" />
+                </div>
+
+                <div class="group" style="margin-top: 12px;">
+                  <input class="input input-with-icon-inside1" type="text" style="color: white; font-weight: bolder;" placeholder="Enter Email" />
+                </div>
+
+                <div class="group" style="margin-top: 12px;">
+                  <input class="input input-with-icon-inside2" type="text" style="color: white; font-weight: bolder;" placeholder="Enter Password" />
+                </div>
+
+                <div class="group" style="margin-top:32px">
+                  <input type="submit" class="button" value="SIGN UP" style="color: white; font-weight: bolder;" (click)="signUpFunction(signUpData)">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+  </div>
+</body>

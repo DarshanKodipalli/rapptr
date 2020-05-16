@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "rapptr-web-coding"
+    }
+  },
+  "defaultProject": "rapptr-web-coding",
+  "cli": {
+    "analytics": "77065143-210a-47f6-9087-e6b0460d47ef"
+  }
 }
