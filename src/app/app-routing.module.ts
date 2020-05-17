@@ -5,8 +5,9 @@ import { LandingScreenComponent } from './landingScreen/landingScreen';
 
 
 const routes: Routes = [
-  { path: 'login', component: LoginComponent },
-  { path: 'landing', component: LandingScreenComponent }
+  { path: '', component:LandingScreenComponent, pathMatch: "full" },
+  { path: 'landing', component: LandingScreenComponent, pathMatch: "full" },
+  { path: 'login', component: LoginComponent, pathMatch: "full" }
 ];
 
 @NgModule({

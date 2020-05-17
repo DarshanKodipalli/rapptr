@@ -68,6 +68,7 @@ import {
     ReactiveFormsModule    
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: [AppRoutingModule,LoginComponent,LandingScreenComponent]
 })
 export class AppModule { }

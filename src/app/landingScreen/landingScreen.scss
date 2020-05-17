@@ -1,0 +1,68 @@
+*,body,ul,li,h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .header-banner{
+    background: url(../../assets/gpc_hero_image@2x.png) no-repeat center center;
+    background-size: cover;
+    height: 100%;
+    /* overflow: hidden; */
+    text-align: center;
+    padding-bottom: 230px;
+    position: relative;
+    margin-bottom: 80px;
+  }
+  .header-banner .login{position: absolute;top:32px;right: 80px;color: #ffffff;font-weight: bold;}
+  .header-banner img{margin-top: 230px;margin-bottom: 32px;}
+  .header-banner h2{color: #ffffff;}
+
+  .body-container{margin-bottom: 80px;float: left;padding: 0px 10%;line-height: 25px;word-spacing: 2px;}
+  .body-container > div{width: 50%;float: left;}
+
+  .body-container .left-block{text-align: right;}
+  .body-container .left-block h2{margin-right: 100px;color: #2FCBFC;}
+  .body-container .right-block p{font-weight: 500;font-size:18px;color: #1B1E1F;margin-left: 160px;}
+  .body-container .right-block p:first-child{margin-bottom: 20px;}
+  
+  .companies-block{background-color: #2F2E2E;float: left;padding: 80px 0;display: block;width: 100%;}
+  .companies-block h2{margin-bottom: 80px;text-align: center;color: #ffffff;}
+  .companies-block > div {width: 20%;float: left;text-align: center;margin-left: 81px;}
+  .companies-block > div img{max-width: 50%;margin-bottom: 24px;}
+  .companies-block > div h5 {color: #ffffff;}
+  
+  .subscribe-block{padding-top: 88px;float: left;display:block;width: 100%;text-align: center;padding-bottom: 90px;}
+  .subscribe-block h2{color: #2FCBFC;margin-bottom: 45px;text-align: center;}
+  
+  form.search-field {margin: auto;display: inline-block;}
+  form.search-field input[type=text] {
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 276px;
+    padding-left: 20px;
+    height: 49px;
+    background: transparent;
+  }
+  
+  form.search-field button {
+    float: left;
+    width: 165px;
+    height: 49px;
+    padding: 10px;
+    background: #2F2E2E;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    border-left: none;
+    cursor: pointer;
+  }
+  
+  .footer{
+    float: left;
+    display: block;
+    width: 100%;
+    background: #E8E8E8;
+    text-align: center;
+    padding: 29px 0;
+  }

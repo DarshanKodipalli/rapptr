@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { RestService } from '../services/rest.service';
+import { Router } from '@angular/router';
+import { AppComponent } from '../app.component';
 
 @Component({
   selector: 'app-landing',
@@ -9,8 +10,15 @@ import { RestService } from '../services/rest.service';
 
 export class LandingScreenComponent{
 	public whoLoggedIn:String = "";
-  constructor(){
-    console.log("Landing Screen Component");
-    this.whoLoggedIn = JSON.parse(localStorage.getItem('login')).email;
+  constructor(private route:Router,private app:AppComponent){
+
+  }
+  loginScreen(){
+    this.app.setLoggedIn();
+    var loginData = {
+      isLoggedIn:true
+    };
+    localStorage.setItem('login',JSON.stringify(loginData));
+//    this.route.navigate(['/login']);          
   }
 }
